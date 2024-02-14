@@ -27,6 +27,7 @@ error['average'] = fuzz.trimf(error.universe, [-1, 0, 1])
 error['ps'] = fuzz.trimf(error.universe, [0, 1, 2])
 error['pb'] = fuzz.trapmf(error.universe, [1, 2, 4, 4])
 
+#plot membership funtions
 #plt.plot(fuzz.trapmf(error.universe, [-4, -4, -2, -1]))
 #plt.plot(fuzz.trimf(error.universe, [-2, -1, 0]))
 #plt.plot(fuzz.trimf(error.universe, [-1, 0, 1]))
