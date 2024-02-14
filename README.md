@@ -9,21 +9,21 @@ where R is the radius of the tank, H is actual water height in the tank, V is th
 
 ![alt text](https://github.com/AnjanaDeSilva1114/fuzzy-water-level/blob/main/qs.png?raw=true)
 
-The approach to solving this assignment is followed by the steps below
+The method for completing this assignment involves the following steps:
 
-● Create fuzzy variables
+● Establish fuzzy variables.
 
-● Create three fuzzy logic membership functions
+● Develop three fuzzy logic membership functions.
 
-● Define fuzzy rules that applied on the membership functions
+● Specify fuzzy rules to be applied to the membership functions.
 
-● Create an ODE function using the provided differential equation
+● Formulate an Ordinary Differential Equation (ODE) function based on the given differential equation.
 
-● Apply initial values to compute the initial voltage by using the predefined fuzzy logic
+● Utilize initial values to determine the initial voltage through the predefined fuzzy logic.
 
-● Compute the new height/height change using the current-voltage
+● Calculate the new height or height change using the current voltage.
 
-● Run a for-loop for several iterations of the last two steps
+● Implement a for-loop to iterate through the last two steps multiple times.
 
 ## Results
 ### Membership function
