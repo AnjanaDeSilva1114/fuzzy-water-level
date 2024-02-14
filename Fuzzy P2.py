@@ -21,13 +21,22 @@ error = ctrl.Antecedent(np.arange(-4, 5, 1), 'e')
 derror = ctrl.Antecedent(np.arange(-0.006, 0.007, 0.001), 'er')
 dvoltage = ctrl.Consequent(np.arange(-3, 4, 1), 'dvoltage')
 
-
 error['nb'] = fuzz.trapmf(error.universe, [-4, -4, -2, -1])
 error['ns'] = fuzz.trimf(error.universe, [-2, -1, 0])
 error['average'] = fuzz.trimf(error.universe, [-1, 0, 1])
 error['ps'] = fuzz.trimf(error.universe, [0, 1, 2])
 error['pb'] = fuzz.trapmf(error.universe, [1, 2, 4, 4])
-+
+
+#plt.plot(fuzz.trapmf(error.universe, [-4, -4, -2, -1]))
+#plt.plot(fuzz.trimf(error.universe, [-2, -1, 0]))
+#plt.plot(fuzz.trimf(error.universe, [-1, 0, 1]))
+#plt.plot(fuzz.trimf(error.universe, [0, 1, 2]))
+#plt.plot(fuzz.trapmf(error.universe, [1, 2, 4, 4]))
+#plt.xlabel('e')
+#plt.ylabel('Membership')
+#plt.legend(loc='best')
+#plt.show()
+
 derror['poor'] = fuzz.trapmf(derror.universe, [-0.006, -0.006, -0.003, 0])
 derror['average'] = fuzz.trimf(derror.universe, [-0.003, 0, 0.003])
 derror['good'] = fuzz.trapmf(derror.universe, [0, 0.003, 0.006, 0.006])
